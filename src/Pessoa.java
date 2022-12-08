@@ -2,11 +2,11 @@ import java.util.Calendar;
 
 public class Pessoa {
     private String nome;
-    private Calendar dataDeNascimento;
-    private String numeroDoCpf;
-    private String codigoDeAreaDaOperadoraDeTelefone;
-    private String numeroDoTelefone;
-    private String operadoraDeTelefone;
+    private Calendar dataNascimento;
+    private String numeroCpf;
+    private String codAreaOperadora;
+    private String numeroTelefone;
+    private String operadoraTelefone;
 
     //gets and sets
 }

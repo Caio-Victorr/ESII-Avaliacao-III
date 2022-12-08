@@ -1,21 +1,15 @@
 public class Pagamento {
 
-    private double resultado;
-
     public double efetuarPagamento(){
+
         if(isEmAberto()){
-            resultado = pagamentoEmAberto();
+            return pagamentoEmAberto();
+        }else if(isPreparado()){
+            return pagamentoPreparado();
+        }else if(isAtrasado()){
+            return pagamentoAtrasado();
         }else{
-            if(isPreparado()){
-                resultado = pagamentoPreparado();
-            }else{
-                if(isAtrasado()){
-                    resultado = pagamentoAtrasado();
-                }else{
-                    resultado = pagamentoNormal();
-                }
-            }
+            return pagamentoNormal();
         }
-        return resultado;
     }
 }
