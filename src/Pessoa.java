@@ -7,6 +7,5 @@ public class Pessoa {
     private String codAreaOperadora;
     private String numeroTelefone;
     private String operadoraTelefone;
-
     //gets and sets
 }
